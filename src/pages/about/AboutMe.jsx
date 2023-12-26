@@ -36,7 +36,7 @@ function AboutMe() {
         </Typography>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center mt-12">
-          <Tilt>
+          <Tilt className="flex justify-center" tiltMaxAngleY={10} tiltMaxAngleX={10}>
             <img
               alt="MK"
               src="/src/assets/images/about-profile-pic.png"

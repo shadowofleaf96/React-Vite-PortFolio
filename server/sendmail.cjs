@@ -1,5 +1,6 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 const cors = require("cors");
 
 const app = express();
@@ -13,8 +14,8 @@ app.post("/send-email", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "shadowofleaf96@gmail.com",
-      pass: "moni gkld flca zxag",
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
     tls: {
       rejectUnauthorized: false,
@@ -23,7 +24,7 @@ app.post("/send-email", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "shadowofleaf96@gmail.com",
+    to: process.env.EMAIL,
     subject: "New Contact Form Submission",
     text: `
       Name: ${firstName} ${lastName}
