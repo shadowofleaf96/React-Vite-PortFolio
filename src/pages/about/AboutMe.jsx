@@ -39,7 +39,7 @@ function AboutMe() {
           <Tilt className="flex justify-center" tiltMaxAngleY={10} tiltMaxAngleX={10}>
             <img
               alt="MK"
-              src="/src/assets/images/about-profile-pic.png"
+              src="../../../images/about-profile-pic.png"
               className="w-2/3 md:w-1/3 md:hidden h-auto object-cover rounded-full mb-4"
             />
           </Tilt>
@@ -60,7 +60,7 @@ function AboutMe() {
                   <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white  dar py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                     <TimelineIcon className="p-3" variant="ghost">
                       <Avatar
-                        src="/src/assets/images/arkx_logo.png"
+                        src="../../../images/arkx_logo.png"
                         alt="ARK-X Logo"
                         style={{ objectFit: "contain" }}
                         size="md"
@@ -85,7 +85,7 @@ function AboutMe() {
                   <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white dark:bg-black py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                     <TimelineIcon className="p-3" variant="ghost">
                       <Avatar
-                        src="/src/assets/images/freelance-icon.png"
+                        src="../../../images/freelance-icon.png"
                         alt="Freelacne Logo"
                         style={{ objectFit: "contain" }}
                         size="md"
@@ -109,7 +109,7 @@ function AboutMe() {
                   <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white dark:bg-black py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                     <TimelineIcon className="p-3" variant="ghost">
                       <Avatar
-                        src="/src/assets/images/leoni-ag-logo.png"
+                        src="../../../images/leoni-ag-logo.png"
                         alt="ARK-X Logo"
                         style={{ objectFit: "contain" }}
                         size="md"
@@ -135,7 +135,7 @@ function AboutMe() {
           <Tilt  tiltMaxAngleY={10} tiltMaxAngleX={10} gyroscope={true}>
             <img
               alt="MK"
-              src="/src/assets/images/about-profile-pic.png"
+              src="../../../images/about-profile-pic.png"
               className="h-auto object-cover rounded-full hidden md:block"
             />
           </Tilt>

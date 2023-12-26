@@ -57,7 +57,7 @@ export function NavBar() {
             <Avatar
               alt="MK"
               withBorder={true}
-              src="/src/assets/images/mrtech_white.png"
+              src="../../../images/mrtech_white.png"
               className="p-0.5"
               style={{ objectFit: "cover" }}
             />

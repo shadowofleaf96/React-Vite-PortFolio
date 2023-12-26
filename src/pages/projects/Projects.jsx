@@ -15,7 +15,7 @@ import { Icon } from "@iconify/react";
 const projectsData = [
   {
     id: 1,
-    image: "/src/assets/images/imusic.png",
+    image: "../../../images/imusic.png",
     title: "IMusic Android App",
     description:
       "Begin with a calculator like everyone, IMusic is a music player, a work of an old open source App called Timber and Others.",
@@ -26,7 +26,7 @@ const projectsData = [
   },
   {
     id: 2,
-    image: "/src/assets/images/OldPortfolio.png",
+    image: "../../../images/OldPortfolio.png",
     title: "My Old PortFolio",
     description:
       "Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using only HTML, CSS, and JavaScript, highlighting my abilities in web development and design",
@@ -35,7 +35,7 @@ const projectsData = [
   },
   {
     id: 3,
-    image: "/src/assets/images/pcpartproject.png",
+    image: "../../../images/pcpartproject.png",
     title: "PC Parts Ecommerce Shop",
     description:
       "Welcome to the MRTech Ecommerce Shop, a simple and lightweight online store for purchasing PC components. This project is built using HTML, CSS, JavaScript, and Tailwind CSS, making it easy to understand and customize.",
@@ -44,7 +44,7 @@ const projectsData = [
   },
   {
     id: 4,
-    image: "/src/assets/images/Blog.png",
+    image: "../../../images/Blog.png",
     title: "TechBlog",
     description:
       "Welcome to TechBlog, an open-source gaming blog created with Tailwind CSS, EJS, and Express.js. TechBlog is designed to be a lightweight and customizable platform for gamers and enthusiasts.",
@@ -53,7 +53,7 @@ const projectsData = [
   },
   {
     id: 5,
-    image: "/src/assets/images/GreenVille.png",
+    image: "../../../images/GreenVille.png",
     title: "GreenVille Ecommerce Shop Project",
     description:
       "Welcome to GreenVille, an open-source MERN (MongoDB, Express.js, React.js, Node.js) stack ecommerce shop project. GreenVille is designed to provide a foundation for building a robust and scalable online bio Organic store.",
@@ -63,7 +63,7 @@ const projectsData = [
   },
   {
     id: 6,
-    image: "/src/assets/images/tadkir.png",
+    image: "../../../images/tadkir.png",
     title: "Tadkir WPF App",
     description:
       "Welcome to Tadkir, simple Windows Presentation Foundation (WPF) application designed to encourage and remind users about the importance of reading the Quran.",

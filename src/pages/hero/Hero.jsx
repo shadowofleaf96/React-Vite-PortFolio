@@ -21,7 +21,7 @@ function Hero() {
       <div className="flex mr:0 md:mr-16 w-2/3 md:w-1/3 lg:w-4/12 xl:w-1/3 items-center justify-center">
         <Tilt tiltMaxAngleY={3} tiltMaxAngleX={3}>
           <img
-            src="/src/assets/images/profile-pic.png"
+            src="../../../images/profile-pic.png"
             alt="MK"
             className="mb-8 w-full h-auto object-cover rounded-full"
           />
