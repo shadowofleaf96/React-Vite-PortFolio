@@ -134,6 +134,7 @@ const ContactMe = () => {
           variant="h3"
           color="initial"
           fontWeight={500}
+          fontFamily={"Poppins"}
           sx={{ marginTop: "20px", textDecoration: "underline" }}
         >
           Contact Me
