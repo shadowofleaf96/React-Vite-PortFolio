@@ -95,7 +95,7 @@ const Skills = () => {
         <Typography
           variant="h1"
           color="black"
-          className="underline text-center font-medium text-4xl md:text-5xl"
+          className="underline text-center font-medium text-4xl md:text-5xl font-poppins"
         >
           My Skills
         </Typography>
@@ -110,7 +110,7 @@ const Skills = () => {
                 className="flex items-center mr-4"
               >
                 <div className="p-4 bg-primary rounded-full">{skill.icon}</div>
-                <Typography variant="h6" align="center" className="ml-2">
+                <Typography variant="h6" align="center" className="ml-2 font-poppins">
                   {skill.name}
                 </Typography>
               </a>

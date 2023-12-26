@@ -35,12 +35,12 @@ export function NavBar() {
           as="li"
           variant="small"
           color="blue-gray"
-          className="p-1 font-medium"
+          className="p-1 font-medium font-poppins"
         >
           <a
             href={`#${page.toLowerCase().replace(/\s+/g, "-")}`}
             className="flex items-center hover:text-second transition-colors"
-            onClick={() => setOpenNav(false)} // Close the navbar on click
+            onClick={() => setOpenNav(false)}
           >
             {page}
           </a>

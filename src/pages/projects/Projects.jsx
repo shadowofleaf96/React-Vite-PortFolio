@@ -101,7 +101,7 @@ function ProjectCard({ project }) {
           alt={project.title}
           className="rounded-t-lg object-cover w-full h-64 md:h-64"
         />
-        <Typography className="text-lg text-black flex justify-center font-semibold mx-3 my-6">
+        <Typography className="text-lg text-black flex justify-center font-semibold mx-3 my-6 font-poppins">
           {project.title}
         </Typography>
       </animated.div>
@@ -123,7 +123,7 @@ function ProjectCard({ project }) {
           boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <Typography className="text-xl text-black font-semibold mb-2">
+        <Typography className="text-xl text-black font-semibold mb-2 font-poppins">
           {project.title}
         </Typography>
 
@@ -180,7 +180,7 @@ function Projects() {
         <Typography
           variant="h1"
           color="black"
-          className="underline text-center font-medium text-4xl md:text-5xl"
+          className="underline text-center font-medium text-4xl md:text-5xl font-poppins"
         >
           My Projects
         </Typography>

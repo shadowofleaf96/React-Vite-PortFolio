@@ -30,7 +30,7 @@ function AboutMe() {
         <Typography
           variant="h1"
           color="black"
-          className="underline font-medium text-4xl md:text-5xl"
+          className="underline font-medium text-4xl md:text-5xl font-poppins"
         >
           About Me
         </Typography>
@@ -47,7 +47,7 @@ function AboutMe() {
           <div className="mr-0 md:mr-16 text-left max-w-full md:max-w-sm md:min-h-full flex-grow mb-4">
             <Typography
               color="black"
-              className=" mb-4 mt-4 font-normal text-sm md:text-base"
+              className=" mb-4 mt-4 font-normal text-sm md:text-base font-poppins"
             >
               Enthusiastic IT and Full Stack MERN developer, eager to know more,
               passionate about web and IT development, seeking hands-on
@@ -73,7 +73,7 @@ function AboutMe() {
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal"
+                        className="font-normal font-poppins"
                       >
                         08/2023 - CURRENT
                       </Typography>
@@ -98,7 +98,7 @@ function AboutMe() {
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal"
+                        className="font-normal font-poppins"
                       >
                         01/2020 - 05/2022
                       </Typography>
@@ -122,7 +122,7 @@ function AboutMe() {
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal"
+                        className="font-normal font-poppins"
                       >
                         05/2019 - 05/2021
                       </Typography>

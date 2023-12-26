@@ -57,7 +57,7 @@ function Footer() {
           </Button>
         </div>
 
-        <Typography color="blue-gray" size="lg" className="text-center mt-2 font-normal">
+        <Typography color="blue-gray" size="lg" className="text-center mt-2 font-normal font-poppins">
           © 2023 Shadow Of Leaf. All Rights Reserved.
         </Typography>
       </div>

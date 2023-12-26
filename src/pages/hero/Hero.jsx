@@ -31,12 +31,12 @@ function Hero() {
         <Typography
           variant="h1"
           fontWeight={500}
-          className="mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-blue-gray-900 dark:text-gray-200"
+          className="mb-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-blue-gray-900 dark:text-gray-200 font-poppins"
         >
           Hi, I'm Mohammed Kotbi
         </Typography>
 
-        <Typography className="mb-8 text-second dark:text-gray-200 text-md md:text-lg">
+        <Typography className="mb-8 text-second dark:text-gray-200 text-md md:text-lg font-poppins">
           <Typewriter
             options={{
               strings: [
@@ -61,14 +61,14 @@ function Hero() {
                 "https://drive.google.com/file/d/1s-KhVWyP3t5JRhRtcRi29rkR091zkjNH/view?usp=sharing"
               )
             }
-            className="bg-second text-white border-2 border-second hover:bg-green-500 hover:border-green-500 transition duration-300 mb-4 md:mr-2 dark:bg-second dark:hover:bg-green-500 dark:text-gray-200 dark:hover:border-green-500"
+            className="font-poppins bg-second text-white border-2 border-second hover:bg-green-500 hover:border-green-500 transition duration-300 mb-4 md:mr-2 dark:bg-second dark:hover:bg-green-500 dark:text-gray-200 dark:hover:border-green-500"
           >
             View My Resume
           </Button>
 
           <Button
             onClick={() => handleButtonClick("#contact-me")}
-            className="bg-transparent dark:bg-black text-black border-2 border-second hover:border-green-500 hover:text-green-500 transition duration-300 mb-4 md:mr-2 dark:text-white dark:hover:border-green-500 dark:hover:text-green-500"
+            className="font-poppins bg-transparent dark:bg-black text-black border-2 border-second hover:border-green-500 hover:text-green-500 transition duration-300 mb-4 md:mr-2 dark:text-white dark:hover:border-green-500 dark:hover:text-green-500"
           >
             Contact Me
           </Button>
