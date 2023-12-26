@@ -6,6 +6,8 @@ import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const URL = import.meta.env.VITE_URL;
+
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
@@ -51,9 +53,8 @@ const ContactMe = () => {
     }
 
     setLoading(true);
-
     try {
-      const response = await fetch("http://localhost:3001/send-email", {
+      const response = await fetch(URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,6 +63,12 @@ const ContactMe = () => {
       });
 
       if (response.ok) {
+        // Clear form inputs on successful email submission
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+
         setAlert({
           severity: "success",
           message: "Email sent successfully!",
