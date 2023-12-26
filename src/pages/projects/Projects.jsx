@@ -18,7 +18,7 @@ const projectsData = [
     image: "../../../images/imusic.png",
     title: "IMusic Android App",
     description:
-      "Begin with a calculator like everyone, IMusic is a music player, a work of an old open source App called Timber and Others.",
+      "Welcome to the ultimate Android music player that is designed to enhance your listening experience, it is based on Timber Music Player, created using Java on Android Studio.",
     liveDemoLink:
       "https://play.google.com/store/apps/details?id=ma.mk.imusic&pli=1",
     sourceCodeLink:
@@ -29,7 +29,7 @@ const projectsData = [
     image: "../../../images/OldPortfolio.png",
     title: "My Old PortFolio",
     description:
-      "Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using only HTML, CSS, and JavaScript, highlighting my abilities in web development and design",
+      "Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using only HTML, CSS, and JavaScript, highlighting my abilities in web development and design.",
     liveDemoLink: "https://shadowofleaf96.github.io/",
     sourceCodeLink: "https://github.com/shadowofleaf96/PortFolio",
   },
