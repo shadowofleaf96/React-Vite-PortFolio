@@ -1,8 +1,76 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using React, MUI, Tailwind, Express and Node, highlighting my abilities in web development and design. Feel free to explore my projects, learn more about me, and get in touch for potential collaborations.
 
-Currently, two official plugins are available:
+Live demo : [live demo](https://new-portfolio-z3hb.onrender.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
+## Features
+
+- **Responsive Design**: A mobile-friendly and responsive layout for seamless viewing on various devices.
+- **Project Showcase**: Display of my latest and most significant projects with project details.
+- **Skills Section**: An overview of the technologies and skills I possess.
+- **About Me**: A brief introduction to who I am, my experiences.
+- **Hero Section**: A good presentation of my portfolio.
+- **Contact Information**: Easy access to get in touch with me.
+
+## Getting Started
+
+### Prerequisites
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [MongoDB](https://www.mongodb.com/try/download/community)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shadowofleaf96/React-Vite-PortFolio.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd React-Vite-PortFolio
+   ```
+
+3. Install server dependencies:
+
+   ```bash
+   cd server
+   npm install
+   ```
+
+4. Install client dependencies:
+
+   ```bash
+   cd client
+   npm install
+   ```
+
+6. Start the development server:
+
+   ```bash
+   npm run dev
+   open another terminal window
+   cd server
+   npx nodemon
+   ```
+
+## Contributing
+
+While this portfolio primarily serves as a personal showcase, I appreciate feedback and suggestions for improvement. Feel free to open an issue or submit a pull request if you have any ideas to enhance the portfolio.
