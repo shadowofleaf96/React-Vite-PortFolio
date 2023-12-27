@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Typography } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import Confetti from 'react-confetti';
 import Tilt from "react-parallax-tilt";
 
 function Hero() {
+  const [clickCount, setClickCount] = useState(0);
+  const [showEasterEgg, setShowEasterEgg] = useState(false);
+
+  const esterOnClick = () => {
+    setClickCount((prevCount) => prevCount + 1);
+
+    if (clickCount === 9) {
+      setShowEasterEgg(true);
+    }
+  };
+
+  useEffect(() => {
+    if (showEasterEgg) {
+      const timeoutId = setTimeout(() => {
+        setClickCount(0);
+      }, 5000);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [showEasterEgg]);
+
   const handleButtonClick = (link) => {
     if (link.startsWith("#")) {
       const targetElement = document.querySelector(link);
@@ -24,8 +46,15 @@ function Hero() {
             src="../../../images/profile-pic.png"
             alt="MK"
             className="mb-8 w-full h-auto object-cover rounded-full"
+            onClick={esterOnClick}
           />
         </Tilt>
+
+        {showEasterEgg && (
+          <div>
+            <Confetti numberOfPieces={1000} recycle={false}/>
+          </div>
+        )}
       </div>
       <div className="md:w-2/4 flex md:flex flex-col items-start justify-center">
         <Typography
