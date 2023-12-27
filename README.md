@@ -48,19 +48,12 @@ Make sure you have the following installed on your machine:
    cd React-Vite-PortFolio
    ```
 
-3. Install server dependencies:
+3. Install dependencies:
 
    ```bash
-   cd server
    npm install
    ```
-
-4. Install client dependencies:
-
-   ```bash
-   cd client
-   npm install
-   ```
+   
 
 6. Start the development server:
 
