@@ -2,6 +2,9 @@
 
 Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using React, MUI, Tailwind, Express and Node, highlighting my abilities in web development and design. Feel free to explore my projects, learn more about me, and get in touch for potential collaborations.
 
+![Portfolio Mockup](https://github.com/shadowofleaf96/React-Vite-PortFolio/blob/master/new-portfolio-z3hb-front.png?raw=true)
+
+
 Live demo : [live demo](https://new-portfolio-z3hb.onrender.com/)
 
 ## Table of Contents
