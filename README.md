@@ -35,7 +35,6 @@ Make sure you have the following installed on your machine:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- [MongoDB](https://www.mongodb.com/try/download/community)
 
 ### Installation
 
