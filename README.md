@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio, a simple and elegant showcase of my work and skills. This portfolio is created using React, MUI, Tailwind, Express and Node, highlighting my abilities in web development and design. Feel free to explore my projects, learn more about me, and get in touch for potential collaborations.
+Welcome to my portfolio, a simple, minimalist and elegant showcase of my work and skills. This portfolio is created using React, MUI, Tailwind, Express and Node, highlighting my abilities in web development and design. Feel free to explore my projects, learn more about me, and get in touch for potential collaborations.
 
 ![Portfolio Mockup](https://github.com/shadowofleaf96/React-Vite-PortFolio/blob/master/mockup.png?raw=true)
 
