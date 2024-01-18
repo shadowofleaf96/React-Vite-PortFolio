@@ -2,16 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="../../../images/mrtech_black.png"
-    />
+    <link rel="icon" type="image/png" href="../../../images/mrtech_black.png" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>My Portfolio</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="pre-loader">
+        <img
+          src="/src/assets/images/Loader.gif"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        />
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

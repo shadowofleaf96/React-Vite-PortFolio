@@ -89,13 +89,13 @@ const Skills = () => {
       data-aos="fade-in"
       data-aos-duration="1500"
       data-aos-mirror="true"
-      className="text-black rounded-5 p-8 md:p-16 scroll-mt-64 md:scroll-mt-28"
+      className="text-black dark:text-white rounded-5 p-8 md:p-16 scroll-mt-64 md:scroll-mt-28"
     >
       <div className="w-full">
         <Typography
           variant="h1"
           color="black"
-          className="underline text-center font-medium text-4xl md:text-5xl font-poppins"
+          className="underline text-center text-black dark:text-white font-medium text-4xl md:text-5xl font-poppins"
         >
           My Skills
         </Typography>

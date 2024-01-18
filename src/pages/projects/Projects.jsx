@@ -93,7 +93,7 @@ function ProjectCard({ project }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       color="white"
-      className="w-full max-w-sm relative mx-auto mb-8 md:max-w-screen-md"
+      className="w-full max-w-sm dark:bg-black relative mx-auto mb-8 md:max-w-screen-md"
     >
       <animated.div style={blurProps}>
         <img
@@ -101,7 +101,7 @@ function ProjectCard({ project }) {
           alt={project.title}
           className="rounded-t-lg object-cover w-full h-64 md:h-64"
         />
-        <Typography className="text-lg text-black flex justify-center font-semibold mx-3 my-6 font-poppins">
+        <Typography className="text-lg text-black dark:text-white flex justify-center font-semibold mx-3 my-6 font-poppins">
           {project.title}
         </Typography>
       </animated.div>
@@ -113,7 +113,6 @@ function ProjectCard({ project }) {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundColor: "rgba(255,255,255,0.9)",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-around",
@@ -122,20 +121,23 @@ function ProjectCard({ project }) {
           padding: "10px",
           boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
         }}
+        className="bg-white dark:bg-black"
       >
-        <Typography className="text-xl text-black font-semibold mb-2 font-poppins">
+        <Typography className="text-xl text-black dark:text-white font-semibold mb-2 font-poppins">
           {project.title}
         </Typography>
 
         <CardBody>
-          <p className="text-sm text-black">{project.description}</p>
+          <p className="text-sm text-black dark:text-white">
+            {project.description}
+          </p>
         </CardBody>
 
         <div className="flex mt-3">
           <Button
             variant="text"
             onClick={() => handleButtonClick(project.liveDemoLink)}
-            className="mr-4 flex items-center rounded-full text-second font-medium"
+            className="mr-4 flex items-center rounded-full text-second font-medium dark:hover:bg-gray-50"
           >
             <Icon
               icon="material-symbols-light:play-circle"
@@ -148,7 +150,7 @@ function ProjectCard({ project }) {
           <Button
             variant="text"
             onClick={() => handleButtonClick(project.sourceCodeLink)}
-            className="flex items-center rounded-full text-second font-medium"
+            className="flex items-center rounded-full text-second font-medium dark:hover:bg-gray-50"
           >
             <Icon
               icon="mdi:github"
@@ -180,7 +182,7 @@ function Projects() {
         <Typography
           variant="h1"
           color="black"
-          className="underline text-center font-medium text-4xl md:text-5xl font-poppins"
+          className="underline text-center dark:text-white font-medium text-4xl md:text-5xl font-poppins"
         >
           My Projects
         </Typography>

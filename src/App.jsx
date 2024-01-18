@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "@material-tailwind/react";
 import NavBar from "./components/Navbar";
 import Hero from "./pages/hero/Hero";
@@ -17,18 +17,20 @@ function App() {
 
   return (
     <ThemeProvider>
-      <NavBar />
-      <Hero />
-      <Separator />
-      <AboutMe />
-      <Separator />
-      <Skills />
-      <Separator />
-      <Projects />
-      <Separator />
-      <ContactMe />
-      <Footer />
-      <ScrollUpButton />
+      <div className="bg-[#F5F5F5] dark:bg-[#111827] m-0 sm:pr-10 sm:pl-10 pr-12 pl-12 lg:pr-16 lg:pl-16 xl:pr-20 xl:pl-20 2xl:pr-24 2xl:pl-24">
+        <NavBar />
+        <Hero />
+        <Separator />
+        <AboutMe />
+        <Separator />
+        <Skills />
+        <Separator />
+        <Projects />
+        <Separator />
+        <ContactMe />
+        <Footer />
+        <ScrollUpButton />
+      </div>
     </ThemeProvider>
   );
 }

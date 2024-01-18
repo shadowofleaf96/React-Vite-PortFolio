@@ -8,10 +8,11 @@ function Footer() {
   };
 
   return (
-    <footer className="w-full rounded-lg border shadow-md bg-white dark:bg-black">
-      <div className="flex flex-col items-center">
+    <footer className="w-full rounded-lg border shadow-md bg-white dark:bg-black dark:border-black">
+      <div className="flex flex-col items-center ">
         <div className="flex">
           <Button
+            className="dark:text-white"
             variant="text"
             aria-label="LinkedIn"
             onClick={() =>
@@ -26,6 +27,7 @@ function Footer() {
             />
           </Button>
           <Button
+            className="dark:text-white"
             variant="text"
             aria-label="GitHub"
             onClick={() =>
@@ -40,6 +42,7 @@ function Footer() {
             />
           </Button>
           <Button
+            className="dark:text-white"
             variant="text"
             aria-label="YouTube"
             onClick={() =>
@@ -57,7 +60,11 @@ function Footer() {
           </Button>
         </div>
 
-        <Typography color="blue-gray" size="lg" className="text-center mt-2 font-normal font-poppins">
+        <Typography
+          color="blue-gray"
+          size="lg"
+          className="text-center mt-2 font-normal font-poppins dark:text-white"
+        >
           © 2023 Shadow Of Leaf. All Rights Reserved.
         </Typography>
       </div>

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Typography, Stack, Grid, Box, Alert, TextField } from "@mui/material";
-import LoadingButton from "@mui/lab/LoadingButton";
-import CircularProgress from "@mui/material/CircularProgress";
+import { Button, Typography, Alert } from "@material-tailwind/react";
 import { Icon } from "@iconify/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -63,7 +61,6 @@ const ContactMe = () => {
       });
 
       if (response.ok) {
-        // Clear form inputs on successful email submission
         document.getElementById("firstName").value = "";
         document.getElementById("lastName").value = "";
         document.getElementById("email").value = "";
@@ -110,175 +107,89 @@ const ContactMe = () => {
   }, []);
 
   return (
-    <Stack
+    <div
       data-aos="fade-in"
       data-aos-duration="1500"
       data-aos-mirror="true"
       direction="column"
       id="contact-me"
-      spacing={2}
-      justifyContent="center"
-      alignItems="center"
-      sx={{
-        borderRadius: "5px",
-        marginBottom: "50px",
-      }}
+      className="space-y-2 items-center justify-center"
+      style={{ borderRadius: "5px", marginBottom: "50px" }}
     >
-      <Stack
-        style={{ width: "100%", padding: "20px" }}
-        sx={{
-          textAlign: "center",
-        }}
-      >
-        <Typography
-          variant="h3"
-          color="initial"
-          fontWeight={500}
-          fontFamily={"Poppins"}
-          sx={{ marginTop: "20px", textDecoration: "underline" }}
-        >
-          Contact Me
-        </Typography>
-        <Box
-          sx={{
-            marginTop: 2,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Box
-            component="form"
-            noValidate
+      <div className="w-full p-5" style={{ textAlign: "center" }}>
+        <div>
+          <h1 className="underline text-center dark:text-white font-medium text-4xl md:text-5xl font-poppins">
+            Contact Me
+          </h1>
+          <form
             onSubmit={handleSubmit}
-            sx={{ mt: 3 }}
+            className="flex flex-col items-center mt-12"
           >
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  name="firstName"
-                  required
-                  fullWidth
+            <div className="md:w-4/5 lg:w-3/4 xl:w-2/3">
+              <div className="flex flex-col md:flex-row">
+                <input
                   id="firstName"
-                  label="First Name"
-                  sx={{
-                    "& label.Mui-focused": {
-                      color: "#d5c455",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#d5c455",
-                      },
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  sx={{
-                    "& label.Mui-focused": {
-                      color: "#d5c455",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#d5c455",
-                      },
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                  sx={{
-                    "& label.Mui-focused": {
-                      color: "#d5c455",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#d5c455",
-                      },
-                    },
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  multiline
-                  rows={4}
-                  name="message"
-                  label="Message"
+                  name="firstName"
                   type="text"
-                  id="message"
-                  autoComplete="message"
-                  sx={{
-                    "& label.Mui-focused": {
-                      color: "#d5c455",
-                    },
-                    "& .MuiOutlinedInput-root": {
-                      "&.Mui-focused fieldset": {
-                        borderColor: "#d5c455",
-                      },
-                    },
-                  }}
+                  className="my-2 py-2 px-4 rounded-md text-gray-900 bg-gray-300 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-second"
+                  placeholder="First Name"
                 />
-              </Grid>
-              <Grid item xs={12}></Grid>
-            </Grid>
-            <LoadingButton
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  className="my-2 py-2 px-4 rounded-md text-gray-900 bg-gray-300 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-second"
+                  placeholder="Last Name"
+                />
+              </div>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                className="my-2 py-2 px-4 rounded-md text-gray-900 bg-gray-300 w-full outline-none focus:ring-2 focus:ring-second"
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                className="my-2 py-2 px-4 rounded-md text-gray-900 bg-gray-300 w-full outline-none focus:ring-2 focus:ring-second"
+              ></textarea>
+            </div>
+            <Button
               type="submit"
-              fullWidth
-              variant="text"
-              color="primary"
               loading={loading}
-              sx={{
-                textAlign: "left",
-                backgroundColor: "#d5c455",
-                color: "white",
-                border: "2px solid #d5c455 !important",
-                height: "50px",
-                transition: "background-color 0.3s",
-                "&:hover": {
-                  backgroundColor: "#8dc63f",
-                  border: "2px solid #8dc63f !important",
-                },
-              }}
+              ripple={true}
+              className="font-poppins mx-2 flex items-center justify-center w-full md:w-4/5 lg:w-3/4 xl:w-2/3 mt-4 bg-second text-white border-2 border-second hover:bg-green-500 hover:border-green-500 transition duration-300 mb-4 md:mr-2 dark:bg-second dark:hover:bg-green-500 dark:text-gray-200 dark:hover:border-green-500"
             >
-              Submit
-            </LoadingButton>
-            <Grid container justifyContent="flex-end">
-              <Grid item></Grid>
-            </Grid>
-          </Box>
-        </Box>
-      </Stack>
+              {loading ? "Sending..." : "Send Message"}
+            </Button>
+          </form>
+        </div>
+      </div>
       {alert && (
         <Alert
-          severity={alert.severity}
-          onClose={handleCloseAlert}
-          sx={{
-            mt: 2,
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "flex-start",
-          }}
+          color={
+            alert.severity === "success"
+              ? "green"
+              : alert.severity === "error"
+              ? "red"
+              : "blue"
+          }
+          borderLeft
+          role="alert"
+          className="ml-auto p-2 mt-2 flex items-center justify-center"
         >
-          {alert.message}
+          <button onClick={handleCloseAlert} className="ml-auto p-2">
+            <Icon icon="mdi:close" height={24} width={24} />
+          </button>
+          <span className="font-base font-poppins ml-auto p-2">
+            {alert.message}
+          </span>
         </Alert>
       )}
-    </Stack>
+    </div>
   );
 };
 

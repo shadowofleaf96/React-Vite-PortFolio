@@ -30,13 +30,17 @@ function AboutMe() {
         <Typography
           variant="h1"
           color="black"
-          className="underline font-medium text-4xl md:text-5xl font-poppins"
+          className="underline font-medium text-4xl md:text-5xl font-poppins dark:text-white"
         >
           About Me
         </Typography>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center mt-12">
-          <Tilt className="flex justify-center" tiltMaxAngleY={10} tiltMaxAngleX={10}>
+          <Tilt
+            className="flex justify-center"
+            tiltMaxAngleY={10}
+            tiltMaxAngleX={10}
+          >
             <img
               alt="MK"
               src="../../../images/about-profile-pic.png"
@@ -44,10 +48,10 @@ function AboutMe() {
             />
           </Tilt>
 
-          <div className="mr-0 md:mr-16 text-left max-w-full md:max-w-sm md:min-h-full flex-grow mb-4">
+          <div className="mr-4 ml-4 md:mr-16 text-left max-w-full md:max-w-sm md:min-h-full flex-grow mb-4">
             <Typography
               color="black"
-              className=" mb-4 mt-4 font-normal text-sm md:text-base font-poppins"
+              className=" mb-4 mt-4 font-normal text-sm md:text-base font-poppins dark:text-white"
             >
               Enthusiastic IT and Full Stack MERN developer, eager to know more,
               passionate about web and IT development, seeking hands-on
@@ -57,8 +61,11 @@ function AboutMe() {
               <Timeline>
                 <TimelineItem className="h-28 hover:scale-105 transition-transform">
                   <TimelineConnector className="!w-[78px]" />
-                  <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white  dar py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                    <TimelineIcon className="p-3" variant="ghost">
+                  <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white dark:bg-black dar py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                    <TimelineIcon
+                      className="p-3 dark:bg-blue-gray-200"
+                      variant="ghost"
+                    >
                       <Avatar
                         src="../../../images/arkx_logo.png"
                         alt="ARK-X Logo"
@@ -67,13 +74,17 @@ function AboutMe() {
                       />
                     </TimelineIcon>
                     <div className="flex flex-col gap-1">
-                      <Typography variant="h6" color="blue-gray">
+                      <Typography
+                        variant="h6"
+                        color="blue-gray"
+                        className="font-base font-poppins dark:text-white"
+                      >
                         ARK-X TALENT FACTORY - Full Stack MERN Trainee
                       </Typography>
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal font-poppins"
+                        className="font-normal font-poppins dark:text-white"
                       >
                         08/2023 - CURRENT
                       </Typography>
@@ -83,7 +94,10 @@ function AboutMe() {
                 <TimelineItem className="h-28 hover:scale-105 transition-transform">
                   <TimelineConnector className="!w-[78px]" />
                   <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white dark:bg-black py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                    <TimelineIcon className="p-3" variant="ghost">
+                    <TimelineIcon
+                      className="p-3 dark:bg-blue-gray-200"
+                      variant="ghost"
+                    >
                       <Avatar
                         src="../../../images/freelance-icon.png"
                         alt="Freelacne Logo"
@@ -92,13 +106,17 @@ function AboutMe() {
                       />
                     </TimelineIcon>
                     <div className="flex flex-col gap-1">
-                      <Typography variant="h6" color="blue-gray">
+                      <Typography
+                        variant="h6"
+                        color="blue-gray"
+                        className="font-base font-poppins dark:text-white"
+                      >
                         FREELANCE - Mobile and Windows junior Developer
                       </Typography>
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal font-poppins"
+                        className="font-normal font-poppins dark:text-white"
                       >
                         01/2020 - 05/2022
                       </Typography>
@@ -107,7 +125,10 @@ function AboutMe() {
                 </TimelineItem>
                 <TimelineItem className="h-28 hover:scale-105 transition-transform">
                   <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white dark:bg-black py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-                    <TimelineIcon className="p-3" variant="ghost">
+                    <TimelineIcon
+                      className="p-3 dark:bg-blue-gray-200"
+                      variant="ghost"
+                    >
                       <Avatar
                         src="../../../images/leoni-ag-logo.png"
                         alt="ARK-X Logo"
@@ -116,13 +137,17 @@ function AboutMe() {
                       />
                     </TimelineIcon>
                     <div className="flex flex-col gap-1">
-                      <Typography variant="h6" color="blue-gray">
+                      <Typography
+                        variant="h6"
+                        color="blue-gray"
+                        className="font-base font-poppins dark:text-white"
+                      >
                         LEONI BOUZNIKA - Crimping Maintenance Technician
                       </Typography>
                       <Typography
                         variant="small"
                         color="gray"
-                        className="font-normal font-poppins"
+                        className="font-normal font-poppins dark:text-white"
                       >
                         05/2019 - 05/2021
                       </Typography>
@@ -132,7 +157,7 @@ function AboutMe() {
               </Timeline>
             </div>
           </div>
-          <Tilt  tiltMaxAngleY={10} tiltMaxAngleX={10} gyroscope={true}>
+          <Tilt tiltMaxAngleY={10} tiltMaxAngleX={10} gyroscope={true}>
             <img
               alt="MK"
               src="../../../images/about-profile-pic.png"
