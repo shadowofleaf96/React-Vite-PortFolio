@@ -10,13 +10,6 @@ const ContactMe = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
 
-  const styles = (theme) => ({
-    notchedOutline: {
-      borderWidth: "1px",
-      borderColor: "yellow !important",
-    },
-  });
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 

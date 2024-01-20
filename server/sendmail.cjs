@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Welcome to my Portfolio Server");
+});
+
 app.post("/send-email", (req, res) => {
   const { firstName, lastName, email, message } = req.body;
 
