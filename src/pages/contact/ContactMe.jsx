@@ -172,14 +172,11 @@ const ContactMe = () => {
           }
           borderLeft
           role="alert"
-          className="ml-auto p-2 mt-2 flex items-center justify-center"
+          open={alert}
+          onClose={() => setAlert(false)}
+          className="w-1/3 flex items-center justify-start"
         >
-          <button onClick={handleCloseAlert} className="ml-auto p-2">
-            <Icon icon="mdi:close" height={24} width={24} />
-          </button>
-          <span className="font-base font-poppins ml-auto p-2">
-            {alert.message}
-          </span>
+          {alert.message}
         </Alert>
       )}
     </div>
