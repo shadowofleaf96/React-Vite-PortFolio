@@ -11,7 +11,6 @@ Live demo : [live demo](https://new-portfolio-z3hb.onrender.com/)
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Features
@@ -22,10 +21,6 @@ Live demo : [live demo](https://new-portfolio-z3hb.onrender.com/)
 - **About Me**: A brief introduction to who I am, my experiences.
 - **Hero Section**: A good presentation of my portfolio.
 - **Contact Information**: Easy access to get in touch with me.
-
-## Getting Started
-
-### Prerequisites
 
 ## Getting Started
 
